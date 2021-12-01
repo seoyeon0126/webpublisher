@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>div와 span</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div style="border:3px solid red;"> <!-- inline style 형식 -->
+			<h2>사자</h2>
+			<p>사자는 아프리카에 살며 강한 다리와 턱,
+			<span style="border:3px solid green;">긴 송곳니</span>를 지니고 있다</p>
+		</div>
+		<hr>
+		<h2>figure</h2>
+			<figure>
+				<img src="images/안드로이드.gif" alt="안드로이드로 용돈벌기">
+				<img src="images/아이폰.gif" alt="아이폰으로 용돈벌기">
+				<figcaption>아이콕스에서 새로 나온 책들</figcaption>
+			</figure>
+		<hr>
+		<h2>mark 요소</h2>
+		<p>&lt;mark&gt;요소는 글 내용에서 주의 깊게 볼 <mark>텍스트 부분을
+		강조 처리</mark>하기 위한 요소입니다.</p>
+		<hr>
+		<h2>datatime</h2>
+		<p>&lt;time&gt;요소는 날짜와 시간을 기계가 이해할 수 있는 형태로
+		만들어 주는 요소입니다.</p>
+		<p><time pubdate datetime="2021-02-18T14:00:00">
+		목요일 오후 2시</time>회의일정</p>
+		<p>'목요일 오후 2시'에 대한 날짜와 시간을 기계에게
+		명확하게 전달합니다. 날짜 다음에 나오는 'T'는 시간을 의미합니다.</p>
+		<p>pubdate 속성은 datatime에 있는 날짜에 작성되었음을 의미합니다.</p>
+		<hr>
+		<h2>details 요소</h2>
+		<h2>신간정보</h2>
+		<details>
+			<summary>아이폰으로 용돈벌기</summary>
+			<ul>
+				<li>출판사 : 아이콕스</li>
+				<li>저자 : 정창훈</li>
+				<li>가격 : 25,000원</li>
+				<li>출간일 : <time datetime="2012-05-25">
+				2012년 5월 25일</time></li>
+			</ul>
+		</details>
+	</body>
+</html>

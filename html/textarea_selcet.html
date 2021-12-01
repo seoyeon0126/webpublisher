@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>textarea, select</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form action="#" method="get">
+		<h2>textarea : 여러줄의 텍스트를 입력받을때</h2>
+		고객의견 <br>
+		<textarea rows="5" cols="50"></textarea>
+		<p>영역의 크기는 rows와 cols로 설정합니다. 사용자가 초기 공간보다<br>
+		더 많은 텍스트를 입력하면 자동으로 스크롤바가 생성됩니다.</p>
+		<h2>select : 메뉴를 표시하고 사용자로 하여금 선택하게 합니다.</h2>
+		<select name="cars">
+			<option value="BMW">BMW</option>
+			<option value="benz">Benz</option>
+			<option value="hyundai" selected>현대자동차</option>
+			<option value="kia">기아자동차</option>
+			<option value="Ssangyong">쌍용자동차</option>
+			<!-- Ctrl+D 로 다음줄로 복사가 가능하다 -->
+		</select>
+		<p>&lt;select&gt;요소는 항상 &lt;option&gt;요소와 함께 사용합니다.</p>
+		<p>&lt;option&gt;요소는 반드시 value속성을 가지고 있어야 하며,<br>
+		selected속성을 이용해 특정 항목을 초기에 설정할 수 있습니다.</p>
+		<p>스터디 지역</p>
+			<select>
+				<optgroup label="관악구">
+					<option value="gwanak-bcd">봉천동</option>
+					<option value="gwanak-sld">신림동</option>
+					<option value="gwanak-nhd">남현동</option>
+				</optgroup>
+				<optgroup label="동대문구">
+					<option value="ddm-jnd">전농동</option>
+					<option value="ddm-dsn">답십리</option>
+					<option value="ddm-ssd">신설동</option>
+				</optgroup>
+			</select>
+		</form>
+	</body>
+</html>

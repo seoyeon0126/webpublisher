@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>입력요소</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form action="/action_page.php" method="get">
+			<fieldset>
+				<legend>개인정보</legend>
+				<p>이름 : <input type="text" name="name"></p>
+				<p>학번 : <input type="text" name="number"></p>
+				<p>패스워드 : <input type="password" name="password"></p>
+				<p>
+					<input type="radio" name="gender" value="male"> 남성
+					<input type="radio" name="gender" value="female"> 여성
+				</p>
+				<p>과일선택 :
+					<input type="checkbox" name="fruits" value="사과"> 사과
+					<input type="checkbox" name="fruits" value="딸기"> 딸기
+					<input type="checkbox" name="fruits" value="복숭아"> 복숭아
+					<input type="checkbox" name="fruits" value="체리"> 체리
+					<input type="checkbox" name="fruits" value="자몽"> 자몽
+				</p>
+				<p>
+					<input type="submit" value="제출">
+				</p>
+			</fieldset>
+		</form>
+	</body>
+</html>

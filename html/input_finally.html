@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>추가된 input type</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form action="#" method="get">
+			<fieldset>
+				<legend>input type</legend>
+				<p><label for="search">검색</label>
+					<input type="search" id="search" autofocus></p>
+				<p><label for="email">이메일 :</label>
+					<input type="email" id="email"
+					placeholder="likey0713@naver.com"></p>
+				<p><label for="url">사이트 주소 :</label>
+					<input type="url" id="url"></p>
+				<p><label for="tel">전화번호 :<label>
+					<input type="tel" id="tel" required 
+					pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+					title="###-####-####"></p>
+				<p><label for="number">수량 :</label>
+					<input type="number" id="number"
+					min="220" max="300" step="5" readonly></p>
+				<p><label for="range">만족도 :</label>
+					<input type="range" id="range"
+					min="1" max="10" value="7"></p>
+				<p><label for="date">날짜 :</label>
+					<input type="date" id="date"></p>
+				<p><label for="datetime-local">날짜시간 :</label>
+					<input type="datetime-local" id="datetime-local"></p>
+				<p><label for="month">월 :</label>
+					<input type="month" id="month"></p>
+				<p><label for="week">주 :</label>
+					<input type="week" id="week"></p>
+				<p><label for="time">시간 :</label>
+					<input type="time" id="time"></p>
+				<p><label for="color">색상 :</label>
+					<input type="color" id="color"></p>
+			</fieldset>
+			<p><input type="submit" value="전송"></p>
+		<!-- input 요소는 무조건 form 안에 존재해야합니다. -->
+		</form>
+	</body>
+</html>

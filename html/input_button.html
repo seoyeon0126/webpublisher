@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>input 버튼</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form action="#" method="get">
+			<p>물품가격 : <input id="number1" type="text" name="user"></p>
+			<p>수량 : <input id="number2" type="text" name="number"></p>
+			<p><input type="button" value="계산" onclick="sum();"></p>
+			<!-- input type"button"에 onclick="sum();" 을 넣어서 값이 나오게 설정한다 -->
+			<!-- 자바스크립트 를 할때 각각 id 를 하나씩 추가해준다 
+			id 는 설정자 마음대로 지정가능하다 -->
+		</form>
+		<script>
+			function sum()	{
+				var com1 =	document.getElementById('number1').value;
+				var com2 =	document.getElementById('number2').value;
+				var sum = com1 * com2; <!-- 세미콜론은 허용범위 를 뜻하며 습관적으로 써주는게 좋다 -->
+				alert(sum);
+				<!-- 자바스크립트 에서 맨 앞에 "function" 을 넣어준다 -->
+				<!-- com1 은 변수이름 을 뜻함 설정은 자유, "=" 대입값 을 뜻함 -->
+			}
+		</script>
+	</body>
+</html>

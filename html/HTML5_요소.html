@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>HTML5 요소 데모 화면</title>
+		<meta charset="utf-8">
+		<style>
+		label {
+			width:100px;
+			display:inline-block;
+			text-align:right;
+		</style>
+	</head>
+	<body>
+		<form action="#" method="get">
+		<h3>HTML5 요소 데모 화면</h3>
+		<p><label for="text">이름 : </label>
+			<input type="text" id="text"></p>
+		<!-- type 은 지정값이 있기에 지정된값만 설정할수 있고 
+		그외에 id 같은경우엔 설정자 마음대로 입력이 가능하다 -->
+		<p><label for="email">이메일 : </label>
+			<input type="email" id="email"
+			placeholder="likey0713@gmail.com"></p>
+		<p><label for="url">웹사이트 : </label>
+			<input type="url" id="url"></p>
+		<p><label for="number">정수 : </label>
+			<input type="number" id="number"
+			min="0" max="10" step="2"></p>
+		<p><label for="range">범위 : </label>
+			<input type="range" id="range"
+			min="0" max="10" value="3"></p>
+		<p><label for="textarea">메시지 : </label>
+			<textarea required></textarea></p>
+		<p><input type="submit" value="submit"></p>
+		</form>
+	</body>
+</html>
