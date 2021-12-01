@@ -1,0 +1,107 @@
+●01-12 이미지(image)
+
+<img src="이미지 파일명" width="가로 길이" height="세로 길이"
+alt="대체텍스트">
+
+* 웹 문서에서 이미지파일을 불러오는 요소는 <img> 입니다. <img>는
+인라인 요소입니다.
+
+이미지(image)
+
+<!DOCTYPE html>
+<html>
+　<head>
+　　<title>이미지</title>
+　</head>
+　<body>
+　　<h2>설악산</h2>
+　　<img src="image/selak.jpg" alt="설악산"
+　　　width="300px" helght="230px">
+　<h2>이미지를 클릭하면 이동합니다.</h2>
+　<a href="http://www.google.com"><img src="images/google.png"
+　　alt="google로고" title="google페이지로 이동합니다." width="150px">
+　</a>
+　</body>
+</html>
+
+이미지 맵(image map)
+* 이미지맵은 하나의 이미지에 여러 개의 링크를 적용할 수 있음
+
+<img src="이미지 파일명" alt="" usemap="#맵이름">
+<map id="맵이름" name="맵이름">
+　<area shape="rect" coords="좌측상단 꼭짓점 x, y, 
+　좌표값과 우측하단 x,y좌표값 " href="url" alt="대체 텍스트">
+　<area shape="circle" coords="원의 중심점 x,y 좌표값, 원의 반지름"
+　href="url" alt="대체 텍스트">
+　<area shape="poly" coords="각 꼭짓점 x,y 좌표값" 
+　href="url" alt="대체텍스트">
+</map>
+
+●01-13 내부링크 예제
+
+<p><a href="section1" id="section1_primary">
+회원약관</a></p>
+<p><a href="#section2">개인정보 수집 및 동의</a></p>
+<p><a href="section3">마케팅/홍보의 수집 및 이용 동의</a></p>
+<hr>
+<h2 id="section1">회원약관<a href="#section1_primary">△</a></h2>
+
+●01-14 리스트(list>
+
+* 일반적으로 목록을 작성할 때 목록의 종류에는 
+순차적 목록 ol (Order List), 
+비순차적 목록 ul(Onorder list), 
+정의형 목록(Definiton List)이 있습니다.
+
+●01-14-1 리스트-Ol(Order List)
+* 순차적인 목록을 작성할 때 사용됩니다.
+<ol>
+　<li>항목의 내용</li>
+　<li>항목의 내용</li>
+</ol>
+
+* <ol>요소는 블록 요소이며 <li>요소 이외의
+다른 요소는 포함할 수 없습니다. <li> 요소는 블록 요소이며
+텍스트, 인라인, 블록 요소를 포함할 수 있습니다.
+
+●01-15 테이블(table)
+
+<table>
+　<tr>
+　　<td>내용</td>
+　　<td>내용</td>
+　</tr>
+</table>
+
+* 웹 문서에서 표를 만드는 요소는 <table> 입니다.
+* <table>은 블록요소 입니다.
+* <table>은 기본적으로 행과 열을 가지고 있습니다.
+* 행을 만드는 요소를 <tr>
+* 열을 만드는 요소를 <td>
+* <td>요소는 셀(cell)이라고 합니다
+* 표의 제목은 <caption>
+* 열을 합치는 속성은 colspan
+* 행을 합치는 속성은 rowspan
+
+** 가운데 정렬 및 볼드체 열의 제목 <th>
+
+***th 의 요소 에있는 scope 속성은
+
+열의 col
+행의 row 를 써서 조금씩 보기쉽게 만든다.
+
+<th scope="col">
+<th scope="row">
+
+<th> scope group 정의, 
+ㄴscope <th>일 경우에만 가능하다.
+
+ex) table 의 요소 "60p"
+<th scope="colgroup">상품설명</th>
+<th scope="col"> 스마트폰, 태블릿pc, 데스크탑pc</th>
+col 를 부여할 경우, 그 자식들이 col group 의 영향을 받고
+
+ex) table 의 요소 "60p"
+<th scope="rowgroup">상품설명</th>
+<th scope="row"> 스마트폰, 태블릿pc, 데스크탑pc</th>
+row 를 부여할 경우, 그 자식들이 row group 의 영향을 받는다.
